@@ -1,0 +1,17 @@
+body {
+  background: var(--main-bg, #000000);
+  color: var(--main-fg, #ffffff);
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}

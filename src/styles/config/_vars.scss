@@ -1,0 +1,9 @@
+:root {
+  --main-bg: #000000;
+  --main-fg: #ffffff;
+
+  @media (prefers-color-scheme: light) {
+    --main-bg: #ffffff;
+    --main-fg: #000000;
+  }
+}
