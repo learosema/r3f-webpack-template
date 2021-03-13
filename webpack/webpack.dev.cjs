@@ -1,6 +1,6 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
-const commonConfiguration = require('./webpack.common');
+const commonConfiguration = require('./webpack.common.cjs');
 const ip = require('internal-ip');
 const portFinderSync = require('portfinder-sync');
 
