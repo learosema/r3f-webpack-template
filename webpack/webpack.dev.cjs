@@ -8,6 +8,7 @@ const d = (folder) => path.resolve(__dirname, folder);
 
 module.exports = merge(commonConfiguration, {
   mode: 'development',
+  entry: ['react-hot-loader/patch', d('../src/index.tsx')],
   devServer: {
     host: '0.0.0.0',
     port: portFinderSync.getPort(8080),
@@ -26,6 +27,11 @@ module.exports = merge(commonConfiguration, {
       const domain1 = `http${https}://${localIp}:${port}`;
       const domain2 = `http${https}://localhost:${port}`;
       console.log(`Project running at:\n  - ${domain1}\n  - ${domain2}`);
+    },
+  },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
     },
   },
 });

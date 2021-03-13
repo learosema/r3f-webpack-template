@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const d = (folder) => path.resolve(__dirname, folder);
 
 const config = {
-  entry: './src/index.tsx',
+  entry: d('../src/index.tsx'),
   output: {
     path: d('../dist'),
     filename: 'bundle.[contenthash].js',
